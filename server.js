@@ -24,6 +24,7 @@ app.use('/api', joinEventBackend);
 app.use('/api', participatedEvents);
 app.use('/api', C_Event_backend);
 
+// <<<<<<< HEAD
 // -----------------------------------------
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -89,6 +90,8 @@ app.get('/getProfilePic', async (req, res) => {
 });
 //------------------------------------------
 // ใส่ค่าตามที่เราตั้งไว้ใน mysql
+// =======
+// >>>>>>> 343f42363d68d5d34bd7f6c1c85137285b1c1074
 const con = mysql.createConnection({
     host: "localhost",
     user: "root",
@@ -112,7 +115,6 @@ const queryDB = (sql, params = []) => {
     });
 };
 
-//ทำให้สมบูรณ์
 app.post('/regisDB', async (req, res) => {
     let { username, password, confirmPassword } = req.body;
     if (password !== confirmPassword) {
@@ -138,7 +140,6 @@ app.post('/regisDB', async (req, res) => {
     return res.redirect('login.html');
 });
 
-//ทำให้สมบูรณ์
 app.get('/logout', (req,res) => {
     res.clearCookie('username');
     res.clearCookie('img');
@@ -146,7 +147,6 @@ app.get('/logout', (req,res) => {
     return res.redirect('login.html');
 })
 
-//ทำให้สมบูรณ์
 app.post('/checkLogin', async (req, res) => {
     const { username, password } = req.body;
 
