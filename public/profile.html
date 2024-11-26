@@ -48,10 +48,22 @@
         <div id="BG_Head-Content">
             <div class="profile-Content center">
                 <img id="My-icon" src="" alt="My-icon">
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input onclick="fileUpload()" type="file" id="fileField" name="avatar" value="fileToUpload" hidden>
+                </form>
                 <div class="profile-details">
                     <h1>
                         Hello, Gay!
                     </h1>
+                </div>
+            </div>
+            <div class="profile-Content center">
+                <img id="My-icon" src="" alt="My-icon">
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" hidden>
+                </form>
+                <div class="profile-details">
+                    <h1>Hello, Gay!</h1>
                 </div>
             </div>
         </div>

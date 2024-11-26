@@ -16,12 +16,45 @@ window.onload = () => {
 
     // ตั้งค่าโปรไฟล์รูปภาพ
     const imgElement = document.getElementById("My-icon");
-    imgElement.src = `profilePic/${profilePic}`;
+    imgElement.src = `/profilepic/${profilePic}`;
+    // imgElement.src = `profilePic/${profilePic}`;
 
     // ตั้งค่าข้อความต้อนรับ
     const namePart = decodeURIComponent(username).split('@')[0]; // ตรวจสอบ encoding
     const profileDetails = document.querySelector(".profile-details h1");
     profileDetails.textContent = `Hello, ${namePart}!`;
+
+        // ------------------------------------------------------------------
+        imgElement.addEventListener("click", () => {
+            document.getElementById('fileField').click(); // เปิดตัวเลือกไฟล์
+        });
+    
+        document.getElementById("fileField").addEventListener("change", async () => {
+            const formData = new FormData(document.getElementById("formId"));
+            try {
+                const response = await fetch('/profilepic', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+        
+                if (result.success) {
+                    // ถ้าอัปโหลดสำเร็จ, รีเฟรชหรืออัปเดตรูปโปรไฟล์
+                    const imgElement = document.getElementById("My-icon");
+                    imgElement.src = `/profilepic/${result.img}?t=${new Date().getTime()}`;
+                    // imgElement.src = `/profilepic/${result.filename}?t=${new Date().getTime()}`; // เพิ่ม query string เพื่อรีเฟรชภาพ
+                    alert('Profile picture updated successfully!');
+                } else {
+                    alert('Failed to upload profile picture');
+                    console.error(result.message);
+                }
+            } catch (error) {
+                alert('An error occurred while uploading the image');
+                console.error('Error:', error);
+            }
+        });
+        // ----------------------------
+
 };
 
 async function fetchParticipatedEvents() {

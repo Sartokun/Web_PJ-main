@@ -39,3 +39,23 @@ function initializeProfilePic() {
 }
 
 window.addEventListener('load', initializeProfilePic);
+
+// -------------------------------------
+function fileUpload(){
+	document.getElementById('fileField').click();
+}
+
+function fileSubmit(){
+	document.getElementById('formId').submit();
+}
+
+function showImg(filename){
+	if (filename !==""){
+		var showpic = document.getElementById('My-icon');
+		showpic.innerHTML = "";
+		var temp = document.createElement("img");
+		temp.src = filename;
+		showpic.appendChild(temp);
+	}
+}
+// -------------------------------------
