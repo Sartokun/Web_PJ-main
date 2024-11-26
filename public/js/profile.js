@@ -62,7 +62,7 @@ async function fetchParticipatedEvents() {
                     : event.description;
 
                 contentDiv.innerHTML = `
-                    <div class="text-content">
+                    <div class="text-content kanit-regular">
                         <img src="${event.image_path || 'pic/Monster1_Colour.png'}" alt="Event Image">
                         <div>
                             <p class="date">${formattedDate}</p>
@@ -80,7 +80,7 @@ async function fetchParticipatedEvents() {
                 popupContainer.classList.add('popup-content');
                 popupContainer.innerHTML = `
                     <img class="img" src="${event.image_path || 'pic/Monster1_Colour.png'}" alt="pic" />
-                    <div class="text-popup">
+                    <div class="text-popup kanit-regular">
                         <p class="date">${formattedDate}</p>
                         <div class="detailContentInPopup">
                             <h3>${event.name}</h3>

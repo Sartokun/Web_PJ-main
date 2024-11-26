@@ -34,7 +34,7 @@ header {
 #header_icon h1 {
     padding-left: 20px;
     font-size: 22pt;
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    -webkit-text-stroke: 0.25px rgb(255, 255, 255);
     /* font-family: "Jolly Lodger", serif; */
     /* font-family: Jaro, sans-serif; */
     color: #FFA931;
@@ -70,7 +70,7 @@ header {
     text-decoration: none;
     color: #FFA931;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .button {
@@ -150,7 +150,7 @@ i {
 .Mid-Content h1 {
     font-size: 40pt;
     color: #FFA931;
-    text-shadow: -3px 0 #606C5D, 0 3px #606C5D, 3px 0 #606C5D, 0 -3px #606C5D;
+    -webkit-text-stroke: 1px rgb(96, 108, 93);
 }
 
 .Mid-Content p {
@@ -998,7 +998,9 @@ hr {
 }
 .profile-details h1 {
     font-size: 100pt;
-    text-shadow: -5px 0 #ffffff, 0 5px #ffffff, 5px 0 #ffffff, 0 -5px #ffffff;
+    font-style: normal;
+    color: #ff8c00;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
 }
 #eventForm{
     text-align: center;
