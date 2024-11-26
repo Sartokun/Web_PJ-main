@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Jaro:opsz@6..72&display=swap');
+        </style>
+    <script src="js/gamepage.js" defer></script>
+    <script src="js/profilePic.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pic/Monster1_Colour.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jersey+10&family=Jolly+Lodger&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jersey+10&family=Jolly+Lodger&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Knights Of Square Table Studio</title>
+</head>
+
+<body>
+    <div id="header_bar">
+        <nav>
+            <header>
+                <!-- ไอคอนแถวบน -->
+                <ul id="header_icon">
+                    <li><a href=""><img src="pic/Monster1_Colour.png" alt="icon"></a></li>
+                    <li>
+                        <h1 class="jolly-lodger-regular">Knights Of Square Table Studio</h1>
+                    </li>
+                </ul>
+
+                <!-- แถวปุ่ม -->
+                <ul id="header_nav">
+                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
+                    <li><a href="event.html"><i class="fas fa-gamepad"></i> Event</a></li>
+                    <li class="button" id="button-profile"><a id="button_login" href="login.html">Login</a></li>
+                </ul>
+            </header>
+        </nav>
+    </div>
+    <main>
+        <div class="BG_Game-Content" id="bgContainer">
+            <div class="BG_linear-gradient">
+                <div class="game-slider-container">
+                    <div class="Game-Content fade show" id="game1" data-bg="url('pic/background_login.gif')">
+                        <img class="i_con_game" src="pic/Monster1_Colour.png" alt="Monster1_Colour">
+                        <h1>Knight of the Obby Tower</h1>
+                        <div>
+                            <h2>V0.1</h2>
+                            <p>This challenging tower awaits new Achievers to explore and find the rumored Rune of Rebirth. However, passing through it is not easy. Many have given up even before starting, but the treasure still waits to be discovered. So, why don't we go explore it? Be the first to conquer this tower!</p>
+                            <a class="buttonComingSoon disabled-link" href="#">Coming Soon...</a>
+                        </div>
+                    </div>
+                    <div class="Game-Content fade" id="game2" data-bg="url('pic/background_main.gif')">
+                        <img class="i_con_game" src="pic/Monster1_Colour.png" alt="Monster1_Colour">
+                        <h1>Isekai X</h1>
+                        <div>
+                            <h2>V0.1</h2>
+                            <p>Isekai X: Reincarnate Project</p>
+                            <a class="buttonComingSoon disabled-link" href="#">Coming Soon...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="badge_game">
+                    <img class="badge-image active" src="pic/Monster1_Colour.png" alt="game1" onclick="selectContent(0)">
+                    <img class="badge-image" src="pic/Monster1_Colour.png" alt="game2" onclick="selectContent(1)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="circle">
+            <h1 class="center font-size50 text_shadow">INFO</h1>
+            <div id="eventContainer" class="Event-Content center event-container">
+                <!-- Popup container -->
+                <div class="popup" id="popup-content" style="display: none;">
+                    <div class="popup-content">
+                        <div class="text-popup">
+                            <!-- เนื้อหาจะถูกเปลี่ยนแปลงที่นี่ -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top100px center">
+                <a class="center button" id="seemore" href="event.html">SEE MORE</a>
+            </div>
+        </div>   
+
+        <div id="Game_footer">
+            <h1 class="center font-size50 color_orange text_shadow top100px">ALL GAME</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="pic/Knight of the Obby Tower_01.png" alt="">
+                    <div class="Details">
+                        <img src="pic/Monster1_Colour.png" alt="icon"></a></li>
+                        <div>
+                            <h1>Knight of the Obby Tower</h1>
+                            <p>Welcome to Knight of the Obby Tower</p>
+                        </div>
+                        <a class="buttonComingSoon disabled-link" href="">Coming Soon...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pic/Knight of the Obby Tower_01.png" alt="">
+                    <div class="Details">
+                        <img src="pic/Monster1_Colour.png" alt="icon"></a></li>
+                        <div>
+                            <h1>Isekai X</h1>
+                            <p>Isekai X: Reincarnate Project</p>
+                        </div>
+                        <a class="buttonComingSoon disabled-link" href="">Coming Soon...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="center">
+        <div class="footer-bar">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h1>Social</h1>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer_nav">
+                        <li><a href=""><i class="fab fa-youtube color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-jira color_green"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-container">
+                <div>
+                    <img class="footer-img" src="pic/Monster1_Colour.png" alt="Monster1_Colour">
+                </div>
+                <div class="footer-item">
+                    <ul class="footer_nav">
+                        <li><a href="" class="color_green"> new</a></li>
+                        <li><a href="" class="disabled-link"><i class="fa fa-certificate color_green" style="font-size: small;"></i></a></li>
+                        <li><a href="" class="color_green"> Support</a></li>
+                        <li><a href="" class="disabled-link"><i class="fa fa-certificate color_green" style="font-size: small;"></i></a></li>
+                        <li><a href="" class="color_green"> Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

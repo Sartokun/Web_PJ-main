@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------------------------------------------------------- -->
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/login.js"></script>
+    <!-- ---------------------------------------------------------------- -->
+    <link rel="icon" href="pic/Monster1_Colour.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jersey+10&family=Jolly+Lodger&display=swap');</style>
+    <!-- ---------------------------------------------------------------- -->
+    <title>Knights Of Square Table Studio</title>
+</head>
+<body>
+    <div class="background_t"></div>
+    <div class="container">
+        <div class="center">
+            <div class="left-section">
+                <h1 class="capriola-regular">Welcome to...</h1>
+                <img src="pic/Monster1_Colour.png" alt="Logo">
+                <h2 class="jolly-lodger-regular text-with-border">Knight Of The Square Table Studio</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="circle">
+            <div class="center">
+                <div class="form-box">
+                    <div class="form-value capriola-regular">
+                        <form action="/checkLogin" method="POST" id="Login">
+                            <h2>Login</h2>
+                            <div class="inputbox">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <input type="text" name="username" required>
+                                <label for="">E-mail</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" name="password" required>
+                                <label for="">password</label>
+                            </div>
+                            <div>
+                                <p id="errordisplay"></p><br>
+                            </div>
+                            <div class="forget">
+                                <label for=""> Continue as <a href="home.html">Guest</a></label>
+                            </div>
+                            <button class="jolly-lodger-regular" id="startButton">Log in</button>
+                            <div class="register">
+                                <p>Don't have a account <a href="register.html">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Jaro:opsz@6..72&display=swap');
+        </style>
+    <script src="js/profile.js" defer></script>
+    <script src="js/profilePic.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pic/Monster1_Colour.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jersey+10&family=Jolly+Lodger&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jersey+10&family=Jolly+Lodger&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Knights Of Square Table Studio</title>
+</head>
+
+<body>
+    <div id="header_bar">
+        <nav>
+            <header>
+                <!-- ไอคอนแถวบน -->
+                <ul id="header_icon">
+                    <li><a href=""><img src="pic/Monster1_Colour.png" alt="icon"></a></li>
+                    <li>
+                        <h1 class="jolly-lodger-regular">Knights Of Square Table Studio</h1>
+                    </li>
+                </ul>
+
+                <!-- แถวปุ่ม -->
+                <ul id="header_nav">
+                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="game.html"><i class="fas fa-gamepad"></i> Game</a></li>
+                    <li><a href="event.html"><i class="fas fa-gamepad"></i> Event</a></li>
+                    <li class="button" id="button-profile"><a id="button_login" href="login.html">Login</a></li>
+                    <li class="button" id="button-logout"><a id="button_logout" href="/logout">Logout</a></li>
+                </ul>
+            </header>
+        </nav>
+    </div>
+    <main>
+        <div id="BG_Head-Content">
+            <div class="profile-Content center">
+                <img id="My-icon" src="" alt="My-icon">
+                <div class="profile-details">
+                    <h1>
+                        Hello, Gay!
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="circle">
+            <h1 class="center font-size50 text_shadow">My Event</h1>
+            <div id="eventContainer" class="Event-Content center event-container">
+
+            </div>
+        </div>
+
+        <div id="directory">
+            <div class="center create_box">
+                <h1 class="center font-size50 text_shadow">Create Event</h1>
+                <form id="eventForm">
+                    <label for="eventName">Event Name:</label><br>
+                    <input type="text" id="eventName" name="eventName" required><br><br>
+                    <label for="eventDate">Event Date:</label><br>
+                    <input type="date" id="eventDate" name="eventDate" required><br><br>
+                    <label for="eventDescription">Description:</label><br>
+                    <textarea id="eventDescription" name="eventDescription" rows="4"></textarea><br><br>
+                    <button type="submit" class="button">Save Event</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="center">
+        <div class="footer-bar">
+            <div class="footer-container">
+                <div class="footer-item">
+                    <h1>Social</h1>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer_nav">
+                        <li><a href=""><i class="fab fa-youtube color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram color_green"></i></a></li>
+                        <li><a href=""><i class="fab fa-jira color_green"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-container">
+                <div>
+                    <img class="footer-img" src="pic/Monster1_Colour.png" alt="Monster1_Colour">
+                </div>
+                <div class="footer-item">
+                    <ul class="footer_nav">
+                        <li><a href="" class="color_green"> new</a></li>
+                        <li><a href="" class="disabled-link"><i class="fa fa-certificate color_green"
+                                    style="font-size: small;"></i></a></li>
+                        <li><a href="" class="color_green"> Support</a></li>
+                        <li><a href="" class="disabled-link"><i class="fa fa-certificate color_green"
+                                    style="font-size: small;"></i></a></li>
+                        <li><a href="" class="color_green"> Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
