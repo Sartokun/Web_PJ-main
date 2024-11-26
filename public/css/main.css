@@ -116,7 +116,6 @@ i {
 
 .Head-Content h2 {
     font-size: 35pt;
-    font-family: "Kanit", sans-serif;
     color: #FBE6D4;
     text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
 }
@@ -389,7 +388,6 @@ hr {
 }
 
 .text-content {
-    font-family: "Kanit", sans-serif;
     background-color: #fff2e0;
     border-radius: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1209,3 +1207,34 @@ form input,textarea{
 }
 /* ---------------------------------------------------- */
 
+.kanit-light {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
